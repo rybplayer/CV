@@ -1,6 +1,6 @@
 # Ryan Batubara's CV
 
-My curriculum vitae in LaTeX. The resume template is [moderncv](https://ctan.org/pkg/moderncv).
+My curriculum vitae in LaTeX. The template is [moderncv](https://ctan.org/pkg/moderncv).
 
 ## 🛠️ How to use
 
