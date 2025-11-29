@@ -1,0 +1,378 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2024 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[12pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvcolor{black}                           % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
+% moderncv themes
+\moderncvstyle[]{classic}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
+                                                   % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
+\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\definecolor{bodyrulecolor}{rgb}{0.55, 0.55, 0.55}
+
+% adjust the page margins
+\usepackage{lastpage}
+\usepackage[hmargin=0.5in,vmargin=1in]{geometry}                  % the 'contemporary' style looks better with reduced margins; uncomment the line below for increased margin
+%\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\listitemsymbolspace}{10pt}            % set custom spacing between list symbol and text item (influences \cvlistitem and \cvlistdoubleitem)
+
+% the 'contemporary' style allows to append additional elements to the head background; uncomment and customize if needed
+%\def\@moderncvheadBackground{
+%}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+% \ifxetexorluatex
+%   \usepackage{fontspec}
+%   \usepackage{unicode-math}
+%   \defaultfontfeatures{Ligatures=TeX}
+%   \setmainfont{Latin Modern Roman}
+%   \setsansfont{Latin Modern Sans}
+%   \setmonofont{Latin Modern Mono}
+%   \setmathfont{Latin Modern Math}
+
+%   % you may also consider Fira Sans Light for a extra modern look
+%   %\setsansfont[ItalicFont={Fira Sans Light Italic},%
+%   %           BoldFont={Fira Sans},%
+%   %           BoldItalicFont={Fira Sans Italic}]%
+%   %           {Fira Sans Light}%
+% \else
+%   \usepackage[utf8]{inputenc}
+%   \usepackage[T1]{fontenc}
+%   \usepackage{lmodern}
+% \fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\rmdefault} 
+\usepackage[english]{babel}
+\usepackage{amsmath, amsfonts}
+
+
+
+%-------------------------------------------------------------------------------
+\name{}{Ryan Y. Batubara}
+% \title{Résumé title}
+% \born{4 July 1776}
+% \address{street and number}{postcode city}{country}
+\phone[mobile]{+1~657~543~6822}
+\homepage[https://]{ryanbatubara.dev}
+\renewcommand{\emaillink}[1]{#1}
+\email{rbatubara@ucsd.edu\makenewline\emailsymbol{}ryan.y.batubara@gmail.com}
+
+% bibliography adjustments (only useful if you make citations in your resume, 
+% or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with multiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\fancypagestyle{firstpage}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[R]{\textit{\thepage/\pageref{LastPage}}}
+    % \renewcommand{\footrulewidth}{0.4pt}
+}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+\makecvtitle
+\thispagestyle{firstpage}
+\rule{\textwidth}{0.4pt}
+
+\pagestyle{fancy}
+\fancyhead[L]{Ryan Y. Batubara}
+\fancyhead[R]{\phonesymbol{+1~657~543~6822} 
+-- \emailsymbol{ryan.y.batubara@gmail.com}
+-- \homepagesymbol{ryanbatubara.dev}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Education}}
+
+\cventry
+{2022--2026}
+{University of California, San Diego (UCSD)}{}{La Jolla, CA}{GPA: 3.97/4.}
+{
+    \textbf{B.S. Mathematics-Computer Science, B.S. Data Science} double major.
+}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Research Experience}}
+
+\cventry
+{\text{Fall 2025}\\ -- present}
+{Undergraduate \href{https://math.ucsd.edu/students/undergraduate/honors-program-information}{Math Honor Thesis} on MBQC}
+{UCSD}
+{}{}{
+Examined the universality of various conditions on the comparability graph for measurement-based quantum computation (MBQC). Part of the prestigious \href{https://math.ucsd.edu/students/undergraduate/honors-program-information}{math honors program} that around 10 students do yearly. In progress. Joint work with Du (Dan) Van. \medbreak
+%
+Advised by Dr. Daniel Grier, Kunal Marwaha, and Jackson Morris.
+}
+\bigbreak
+
+\cventry
+{\text{Fall 2025}\\ -- present}
+{Capstone in Communication Complexity}
+{UCSD}
+{}{}{
+Used communication complexity to investigate lower bounds for data science algorithms, like multi-agent learning and data streams. In progress. With Ivy Hawks, Darren Ho, and Ciro Zhang. \medbreak
+%
+Advised by Dr. Shachar Lovett.
+}
+\bigbreak
+
+\cventry
+{\text{Winter 2024} -- present}
+{Undergraduate Research in Algebraic Geometry}
+{UCSD}
+{}{}{
+Implemented GPU-accelerated controlled reduction to discover many first examples in algebaric geometry. Some of this work is in arXiv preprint 2502.12428, some in progress. With Alex Pan and Maximus Mellberg. \medbreak
+%
+Supervised by Jack Garzella, Yongyuan (Steve) Huang, and Dr. Kiran Kedlaya.
+}
+\bigbreak
+
+\cventry
+{\text{Fall 2024} -- \text{Spring 2025}}
+{HDSI Responsible Data Science Program}
+{UCSD}
+{}{}{
+Investigated relationship between education and incarceration through data science methodologies. Culminated in a presentation to faculty at the Halicioğlu Data Science Institute (HDSI). With Leonardo Bangayan, Varick Hasim, Donald Taggart, and Serena Xie. \medbreak
+%
+Advised by Conan Minihan and Dr. Benjamin Smarr.
+}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Publications}}
+
+\subsection{In Preparation}
+
+\cvitem{}{
+\begin{itemize}
+   \item R. Batubara, J. Garzella, Y. Huang, and M. Mellberg. GPU-accelerated zeta functions of projective hypersurfaces.
+\end{itemize}
+}
+
+\vspace{-1em}
+\subsection{Preprints}
+
+\cvitem{}{
+\begin{itemize}
+    \item R. Batubara, J. Garzella, and A. Pan. K3 surfaces of any Artin--Mazur
+    height over $\mathbb{F}_5$ and $\mathbb{F}_7$ via quasi-$F$-split singularities and GPU acceleration. In arXiv preprint 2502.12428. Submitted to the \emph{Journal of Symbolic Computation}.
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Teaching}}
+
+\cventry
+{Fall 2025}
+{Tutor}
+{CSE101: Design and Analysis of Algorithms}
+{UCSD}
+{}
+{Graded, held tutor hours for 300+ students under Dr. Russell Impagliazzo and Dr. Qipeng Liu.}
+
+\cventry
+{Fall 2025}
+{Tutor}
+{DSC10: Principles of Data Science}
+{UCSD}
+{}
+{Wrote exams, held tutor hours for 400+ students under Dr. Janine Tiefenbruck and Dr. Peter Chi.}
+
+\cventry
+{Summer 2025}
+{Grader}
+{MATH170A: Numerical Analysis}
+{UCSD}
+{}
+{Graded homework for 60+ students under Dr. Jiawang Nie.}
+
+\cventry
+{Summer 2025}
+{Tutor}
+{DSC20: Programming and Data Structures for Data Science (Remote)}
+{UCSD}
+{}
+{Wrote exams, led dicussion, and graded for 20+ students under Dr. Brendan Tomoschuk.}
+
+\cventry
+{Spring 2025}
+{Tutor}
+{CSE190: Introduction to Quantum Computing}
+{UCSD}
+{}
+{Wrote homework, held office hours, and graded for 100+ students under Dr. Daniel Grier.}
+
+\cventry
+{Winter 2025}
+{Grader}
+{MATH103B: Modern Algebra II}
+{UCSD}
+{}
+{Graded homework for 100+ students under Dr. Jack Wesley.}
+
+\cventry
+{Fall 2023 -- present}
+{Lead-Peer Mentor}
+{\href{https://pace.ucsd.edu}{CSE-PACE Cohorts}}
+{UCSD}
+{}
+{Introduced 300+ first-year computing majors to UCSD and computing topics under Dr. Mia Minnes, Dr. Joe Politz, and Dr. Kristen Vaccaro.}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Readings and Coursework}}
+
+\cvitem{Relevant Coursework}{
+    Math: Honors Algebra, Honors Analysis, Honors Graph Theory, Topology, Combinatorics. \smallbreak
+    %
+    Computer Science: Graduate Quantum Complexity, Algorithms, Theory of Computation, Programming Languages, Systems for Scalable Analytics, Data Visualization.
+}
+
+\cvitem{Fall 2024}{
+    Reading on May's \emph{Concise Algebraic Topology}. Led by Jack Garzella.
+}
+
+\cvitem{Spring 2024}{
+    Reading on Atiyah and MacDonald's \emph{Commutative Algebra}. Led by Jack Garzella, Yongyuan (Steve) Huang, and Matt Broe.
+}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Professional Experience}}
+
+\cventry
+{Sep. 2025 -- Dec. 2025}
+{Machine Learning Intern}
+{\href{https://gani.ai/}{gani.ai}}
+{Jakarta, Indonesia (Remote)}
+{}
+{Implemented internal LLM fine-tuning pipelines for legal document drafting.}
+
+\cventry
+{Jun. 2025 -- Aug. 2025}
+{Software Engineering Intern}
+{Merah Putih Ltd.}
+{Jakarta, Indonesia (Remote)}
+{}
+{Created web dashboards from scratch for financial transaction management.}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Awards and Honors}}
+
+\cvitem{Fall 2022 -- present}
+{UCSD \href{https://revelle.ucsd.edu/academics/honors-opportunities/honors-programs.html}{Revelle Provost Honors}. \newline{}
+Honors for high quarter-by-quarter GPA.}
+
+\cvitem{2024}
+{\href{https://bigdataforsandiego.github.io/}{SDSU Big Data Hackaton} Best Geospatial Thinker.}
+
+\cvitem{2019}
+{\href{https://www.wminv.org/}{World Mathematics Invitational} Bronze at Fukuoka, Japan.}
+
+\cvitem{2018}
+{\href{https://www.wminv.org/}{World Mathematics Invitational} Bronze at Seoul, South Korea.}
+
+%-------------------------------------------------------------------------------
+\newpage
+\section{\textbf{Service}}
+
+\cventry
+{Fall 2025 -- present}
+{Vice President}
+{\href{https://sumsatucsd.org/}{Society of Undergraduate Mathematics Students}}
+{UCSD}
+{}
+{Organized technical workshops with Mathworks and socials for the undergraduate math community.}
+
+\cventry
+{Fall 2023 -- Spring 2025}
+{Technical Lead}
+{\href{https://sites.google.com/ucsd.edu/qcsd}{Quantum Computing Student Association}}
+{UCSD}
+{}
+{Introducing quantum computing; helped host Qiskit Fall Fest; collaborations with Harvard.}
+
+\cventry
+{Fall 2023 -- Spring 2025}
+{Workshops Chair}
+{\href{https://sumsatucsd.org/}{Society of Undergraduate Mathematics Students}}
+{UCSD}
+{}
+{Held intro to proof and MATLAB workshops; lightning talks; integration bee, among many others.}
+
+%-------------------------------------------------------------------------------
+\section{\textbf{Projects}}
+
+\cventry
+{Fall 2024 -- present}{\href{https://github.com/UCSD-Historical-Enrollment-Data/}{UCSD Historial Enrollment Project}}{}{}{}
+{Scraped, organized, and plotted UCSD class enrollment and waitlists using Rust and Python.}
+
+\cventry
+{Fall 2024}{\href{https://dandu.dev/docs/quantum-type-theory.pdf}{Linear Dependent Type Theory
+for Quantum Computation}}{}{}{}
+{Survey on no-cloning compatible type systems for quantum programming languages. \newline{}
+Graduate class project for CSE 291: Quantum Complexity. With Arnav Dandu.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \subject{Job application}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \signature{0.9}{signature.png}                     % optional, remove / comment the line if not wanted: first argument goes to \includegraphics > scale
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum various nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus various blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim various pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
